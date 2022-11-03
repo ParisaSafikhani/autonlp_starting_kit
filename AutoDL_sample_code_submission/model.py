@@ -26,8 +26,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.svm import LinearSVC
 from sklearn.feature_selection import SelectKBest
 from sklearn.feature_selection import f_classif
-from tensorflow.python.keras.preprocessing import text
-from tensorflow.python.keras.preprocessing import sequence
+from tensorflow.keras.preprocessing import text
+from tensorflow.keras.preprocessing import sequence
 
 
 MAX_VOCAB_SIZE = 10000

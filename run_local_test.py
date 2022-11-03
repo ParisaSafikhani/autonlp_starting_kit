@@ -145,21 +145,21 @@ if __name__ == '__main__':
                                     'AutoDL_sample_code_submission')
     default_time_budget = 1200
 
-    tf.flags.DEFINE_string('dataset_dir', default_dataset_dir,
+    tf.compat.v1.flags.DEFINE_string('dataset_dir', default_dataset_dir,
                            "Directory containing the content (e.g. "
                            "adult.data/ + "
                            "adult.solution) of an AutoDL dataset. Specify this "
                            "argument if you want to test on a different "
                            "dataset.")
 
-    tf.flags.DEFINE_string('code_dir', default_code_dir,
+    tf.compat.v1.flags.DEFINE_string('code_dir', default_code_dir,
                            "Directory containing a `model.py` file. Specify "
                            "this "
                            "argument if you want to test on a different "
                            "algorithm."
                            )
 
-    tf.flags.DEFINE_float('time_budget', default_time_budget,
+    tf.compat.v1.flags.DEFINE_float('time_budget', default_time_budget,
                           "Time budget for model train/predict if not "
                           "specified in meta.json")
 

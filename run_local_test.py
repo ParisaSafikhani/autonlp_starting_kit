@@ -163,7 +163,7 @@ if __name__ == '__main__':
                           "Time budget for model train/predict if not "
                           "specified in meta.json")
 
-    FLAGS = tf.flags.FLAGS
+    FLAGS = tf.compat.v1.flags.FLAGS
     dataset_dir = FLAGS.dataset_dir
     code_dir = FLAGS.code_dir
     time_budget = FLAGS.time_budget
